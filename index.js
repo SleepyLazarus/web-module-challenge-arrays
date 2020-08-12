@@ -40,11 +40,21 @@ To save you from having to count the items above, you can assume that length of 
 
 i.e. is31Flavors(originalFlavors) will return TRUE.*/
 
-function is31Flavors(/*code here*/){
+const notOriginalFlavors = ["NotVanilla", "NotChocolate"]
 
-    /*code here*/
-
+function is31Flavors(arr){
+    for(let i = 0; i < arr.length; ++i){
+        if (arr.length === 31){
+            console.log(true);
+        }else{
+            console.log(false);
+        }
+    }
 }
+
+console.log(is31Flavors(originalFlavors));
+console.log(is31Flavors(notOriginalFlavors));
+
 
 /* Task 2: Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
 
@@ -144,13 +154,20 @@ DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
 
 hint - you can use the .includes method to help you solve this */
 
-function filterByWord(/*code here*/){
+/*
+function filterByWord(arr, string){
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++){
+      if (arr[i].includes(string)){
+        newArr.push(arr[i]);
+      }
+    }
+    return newArr;
+  }
+  
+  console.log(filterByWord(originalFlavors, 'Chocolate'));
 
-    /*code here*/
-
-}
-
-
+*/
 
 /* 🧁🍦🍨 STRETCH 🍨🍦🍫*/ 
 
